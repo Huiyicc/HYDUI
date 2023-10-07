@@ -9,8 +9,15 @@
 namespace HYDUI {
 
 
-// 初始化DUI环境
-void DUIInit(bool RENDERER_ACCELERATED = true);
+
+/**
+ * 初始化DUI环境
+ *
+ * \param RendererAccelerated 是否使用硬件加速
+ * \param
+ */
+void DUIInit(std::string_view ThemeFile,bool RendererAccelerated = true);
+
 // 退出并清理DUI环境
 void DUIExit();
 

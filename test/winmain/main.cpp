@@ -5,7 +5,7 @@
 #include "HYDUI/window.hpp"
 
 int main() {
-	HYDUI::DUIInit();
+	HYDUI::DUIInit("./theme/Default/Default.hy");
 
 	HYDUI::Window window;
 	window.Create("hello", 800, 600);

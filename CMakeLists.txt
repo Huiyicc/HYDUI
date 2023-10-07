@@ -13,14 +13,17 @@ file(GLOB_RECURSE lib_source
 
 # library
 
+
 add_library(HYDUI ${lib_source})
 target_link_libraries(HYDUI
         SDL2
+        SDL2_image
 )
 
 # test
 
 add_executable(exp_test ${CMAKE_CURRENT_LIST_DIR}/test/winmain/main.cpp)
+
 target_link_libraries(exp_test
         HYDUI
 )

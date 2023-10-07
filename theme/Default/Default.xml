@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Ex_DirectUI_ThemesPack ThemesName="Ex_DirectUI" Author ="YHan" Url="Http://t.qq.com/Micro5oft">
+	<common name="SysShadow.HostWnd" rect="75,95,30,18" gird="9,8,12,2" margin="4,3,-4,-5" rectround="3" crborder="1358954496,872415231" cycaption="26"/>
+	<common name="SysShadow.SubWnd" rect="75,95,30,18" gird="9,8,12,2" margin="4,3,-4,-5" rectround="3" crborder="1358954496,872415231" cycaption="26"/>
+	<common name="SysShadow.Menu" rect="205,90,13,13" gird="6,6,1,1" margin="3,3,-3,-3" left_cutline="2" right_cutline="-2" left_icon="5" left_text="30" checkrect="205,105,15,10"/>
+	<common name="SysButton" top="0" offsetright="-1"/>
+	<common name="SysButton.Close" size="0,0,39,19" normal="0,1,39,19" highlight="40,1,39,19" down="80,1,39,19"/>
+	<common name="SysButton.Max" size="0,0,28,19" normal="120,1,28,19" highlight="149,1,28,19" down="178,1,28,19"/>
+	<common name="SysButton.Restore" size="0,0,28,19" normal="207,1,28,19" highlight="236,1,28,19" down="265,1,28,19"/>
+	<common name="SysButton.Min" size="0,0,28,19" normal="294,1,28,19" highlight="323,1,28,19" down="352,1,28,19"/>
+	<common name="SysButton.Menu" size="0,0,28,19" normal="0,21,28,19" highlight="29,21,28,19" down="58,21,28,19"/>
+	<common name="SysButton.Skn" size="0,0,28,19" normal="87,21,28,19" highlight="116,21,28,19" down="145,21,28,19"/>
+	<common name="SysButton.Report" size="0,0,28,19" normal="174,21,28,19" highlight="203,21,28,19" down="232,21,28,19"/>
+	<common name="SysButton.Setting" size="0,0,28,19" normal="261,21,28,19" highlight="290,21,28,19" down="319,21,28,19"/>
+	<common name="Button" normal="0,42,69,24" highlight="69,42,69,24" down="138,42,69,24" focus="207,42,69,24" gird="4,3,61,16" margin="3,3,-3,-5"/>
+	<common name="CheckButton" size="0,0,17,17" normal="0,70,17,17" highlight="17,70,17,17" down="34,70,17,17" normal_ck="54,70,17,17" highlight_ck="71,70,17,17" down_ck="88,70,17,17" filltype="2"/>
+	<common name="RadioButton" size="0,0,17,17" normal="110,70,17,17" highlight="127,70,17,17" down="144,70,17,17" normal_ck="165,70,17,17" highlight_ck="182,70,17,17" down_ck="199,70,17,17" filltype="2"/>
+	<common name="Edit" normal="220,70,20,26" highlight="240,70,20,26" focus="240,70,20,26" margin="3,3,-3,-3" gird="3,4,13,19"/>
+	<common name="ScrollBar" v_bg="325,43,8,60" v_bg_gird="3,3,2,54" v_normal="335,63,8,40" v_highlight="345,63,8,40" v_down="355,63,8,40" v_gird="3,3,2,34" v_up_normal="339,40,10,9" v_up_highlight="351,40,10,9" v_up_down="363,40,10,9" v_down_normal="339,50,10,9" v_down_highlight="351,50,10,9" v_down_down="363,50,10,9" h_bg="285,43,32,8" h_bg_gird="3,3,26,2" h_normal="285,53,32,8" h_highlight="285,63,32,8" h_down="285,73,32,8" h_gird="3,3,26,2" h_left_normal="286,86,9,10" h_left_highlight="295,86,9,10" h_left_down="305,86,9,10" h_right_normal="285,100,9,10" h_right_highlight="295,100,9,10" h_right_down="305,100,9,10"/>
+	<common name="ComboBox" normal="220,70,20,26" highlight="240,70,20,26" focus="240,70,20,26" margin="3,3,-3,-3" gird="3,4,13,19" normal_btn="113,90,23,24" highlight_btn="136,90,23,24" down_btn="136,90,23,24" gird_btn="6,9,11,7" margin_btn="0,1,-1,-2" spin_up="165,95,11,6" spin_down="165,103,11,7"/>
+	<common name="MsgBox" rect="390,0,2,160" blocksize="0,0,96,31" barheight="36" m16="5,120,38,38" m48="44,120,38,38" m32="84,120,38,38" m64="124,120,38,38" m128="164,120,38,38" iconsize="0,0,38,38"/>
+	<common name="TabCtrl" size="0,0,19,33" gird="9,0,1,33" normal="205,120,19,33" highlight="224,120,19,33" down="246,120,19,33" crText="-1" crborder="872415231" round="10" tabMargin="9,2,9,2" />
+</Ex_DirectUI_ThemesPack>

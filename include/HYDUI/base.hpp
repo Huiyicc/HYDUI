@@ -12,12 +12,18 @@ struct SDL_Renderer;
 
 namespace HYDUI {
 
-// 全局配置
-struct ContextConfig {
-	// 是否使用硬件加速
-	bool RENDERER_ACCELERATED = true;
+struct ThemeContext {
+    std::string XMLData;
+    std::string ImageData;
 };
-extern ContextConfig g_contextConfig;
+
+// 全局配置
+struct ConfigContext {
+	// 是否使用硬件加速
+	bool RendererAccelerated = true;
+    ThemeContext Theme;
+};
+extern ConfigContext g_ConfigContext;
 
 }
 

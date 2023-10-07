@@ -37,7 +37,7 @@ void Window::Create(const char *title, int width, int height, int x, int y, Wind
 	SDL_RENDERER_ACCELERATED这个值表示启用硬件加速
 	*/
 	Uint32 lFlags = 0;
-	if (g_contextConfig.RENDERER_ACCELERATED) {
+	if (g_ConfigContext.RendererAccelerated) {
 		lFlags = SDL_RENDERER_ACCELERATED;
 	}
 	m_render = SDL_CreateRenderer(m_window, -1, lFlags);
