@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.26)
+project(winman_test)
+
+set(CMAKE_CXX_STANDARD 20)
+
+# include
+include( ../../CMakeLists.txt )
+
+# Dependent Libraries
+file(GLOB_RECURSE test_source
+        "*.*"
+)
+
+add_executable(winman_test ${test_source})
+
+
