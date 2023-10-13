@@ -4,13 +4,15 @@
 #include "HYDUI/theme.hpp"
 #include "HYDUI/error.hpp"
 #include "HYDUI/base.hpp"
+#include "xml/pugixml.hpp"
+#include "SDL2/SDL_image.h"
 #include <iostream>
 #include <sstream>
 #include <fstream>
 #include <cstdint>
 #include <string>
 #include <vector>
-#include <strings.h>
+#include <cstring>
 
 namespace HYDUI {
 
@@ -117,12 +119,40 @@ void readTheme(std::string_view ThemeFile) {
     }
     g_ConfigContext.Theme.XMLData = xmlBuff;
     g_ConfigContext.Theme.ImageData = imgBuff;
+    auto imgRW = SDL_RWFromConstMem(g_ConfigContext.Theme.ImageData.data(), g_ConfigContext.Theme.ImageData.size());
+    if (imgRW == nullptr) {
+        throw DUIException("创建主题图片内存流失败");
+    }
+    g_ConfigContext.Theme.ImageSurface = IMG_Load_RW(imgRW, 1);
+    if (g_ConfigContext.Theme.ImageSurface == nullptr) {
+        throw DUIException("解析主题图片失败");
+    }
+
+}
+
+void loadXML() {
+    auto result = g_ConfigContext.Theme.XMLDoc.load_buffer(g_ConfigContext.Theme.XMLData.data(), g_ConfigContext.Theme.XMLData.size());
+    if (!result) {
+        throw DUIException("解析主题XML失败");
+    }
+    auto root = g_ConfigContext.Theme.XMLDoc.child("HY_DirectUI_ThemesPack");
+    if (root.empty()) {
+        throw DUIException("主题XML根节点错误");
+    }
+    for (auto &node: root.children()) {
+        if (strcmp(node.name(), "common") == 0) {
+            std::string name = node.attribute("name").value();
+            std::cout << name << std::endl;
+        }
+    }
+
 }
 
 void LoadTheme(std::string_view ThemeFile) {
+    // 读取主题包
     readTheme(ThemeFile);
-
     // 解析主题包
+    loadXML();
 
 }
 

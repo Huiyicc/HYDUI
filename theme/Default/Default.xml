@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="gb2312"?>
-<Ex_DirectUI_ThemesPack ThemesName="Ex_DirectUI" Author ="YHan" Url="Http://t.qq.com/Micro5oft">
+<HY_DirectUI_ThemesPack ThemesName="HYDUI" Author ="HuiYi" Url="https://github.com/Huiyicc/HYDUI">
 	<common name="SysShadow.HostWnd" rect="75,95,30,18" gird="9,8,12,2" margin="4,3,-4,-5" rectround="3" crborder="1358954496,872415231" cycaption="26"/>
 	<common name="SysShadow.SubWnd" rect="75,95,30,18" gird="9,8,12,2" margin="4,3,-4,-5" rectround="3" crborder="1358954496,872415231" cycaption="26"/>
-	<common name="SysShadow.Menu" rect="205,90,13,13" gird="6,6,1,1" margin="3,3,-3,-3" left_cutline="2" right_cutline="-2" left_icon="5" left_text="30" checkrect="205,105,15,10"/>
+
+	<common name="SysShadow.Menu" rect="205,90,13,13" gird="6,6,1,1" margin="3,3,-3,-3" left_cutline="2" right_cutline="-2" left_icon="5" left_text="30" checkrect="205,105,15,10"/>
 	<common name="SysButton" top="0" offsetright="-1"/>
 	<common name="SysButton.Close" size="0,0,39,19" normal="0,1,39,19" highlight="40,1,39,19" down="80,1,39,19"/>
 	<common name="SysButton.Max" size="0,0,28,19" normal="120,1,28,19" highlight="149,1,28,19" down="178,1,28,19"/>
@@ -20,4 +21,4 @@
 	<common name="ComboBox" normal="220,70,20,26" highlight="240,70,20,26" focus="240,70,20,26" margin="3,3,-3,-3" gird="3,4,13,19" normal_btn="113,90,23,24" highlight_btn="136,90,23,24" down_btn="136,90,23,24" gird_btn="6,9,11,7" margin_btn="0,1,-1,-2" spin_up="165,95,11,6" spin_down="165,103,11,7"/>
 	<common name="MsgBox" rect="390,0,2,160" blocksize="0,0,96,31" barheight="36" m16="5,120,38,38" m48="44,120,38,38" m32="84,120,38,38" m64="124,120,38,38" m128="164,120,38,38" iconsize="0,0,38,38"/>
 	<common name="TabCtrl" size="0,0,19,33" gird="9,0,1,33" normal="205,120,19,33" highlight="224,120,19,33" down="246,120,19,33" crText="-1" crborder="872415231" round="10" tabMargin="9,2,9,2" />
-</Ex_DirectUI_ThemesPack>
+</HY_DirectUI_ThemesPack>

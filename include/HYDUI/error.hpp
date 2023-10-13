@@ -7,6 +7,7 @@
 
 #include <exception>
 #include <string>
+#include <utility>
 
 namespace HYDUI {
 
@@ -16,6 +17,7 @@ private:
 	std::string mesStr;
 public:
 	explicit DUIException(const char* message) : mesStr(message) {};
+	explicit DUIException(std::string  message) : mesStr(std::move(message)) {};
 
 	[[nodiscard]] const char * what() const noexcept override;
 
